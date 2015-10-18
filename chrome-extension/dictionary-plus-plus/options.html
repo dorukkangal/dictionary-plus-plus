@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Ayarlar | Sözlük++</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sözlük++ for Google Chrome - Ayarlar Sayfası">
+    <meta name="author" content="Doruk Kangal">
+
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.css" >
+    <link type="text/css" rel="stylesheet" href="css/custom.css">
+
+    <script type="text/javascript" src="lib/jquery-2.0.3.min.js"></script>
+    <script type="text/javascript" src="common.js"></script>
+    <script type="text/javascript" src="options.js"></script>
+
+    <!--<link rel="shortcut icon" href="img/favicon.ico">-->
+</head>
+
+<body style="background: #F0F0F0;">
+<div class="container">
+
+    <div class="hero-unit" style="position:relative;">
+        <img src="images/icon_128.png" style="float:left; margin:-20px 20px 0 0;">
+
+        <h1 style="font-size:24pt; margin-bottom:5px;">Sözlük++
+            <small>for Google Chrome</small>
+        </h1>
+        <p>Ayarlar Sayfası</p>
+
+        <div><span class="badge badge-inverse" id="cpau_version_label">Version 2.0</span></div>
+    </div>
+
+    <div class="alert alert-info" id="recently-updated" style="display:none;"></div>
+
+    <h2 class="storytitle first" style="float:left;">Ayarlar</h2>
+    <a id="reset_settings" class="btn btn-danger" style="position:relative; top:4px; margin-left:10px;">Ayarları
+        Sıfırla</a>
+
+    <div class="well settings" style="clear:left;">
+        <h3>Kullanmak istediğiniz sözlük servisini seçebilirsiniz</h3>
+
+        <div id="services"></div>
+        <a id="save_settings" class="btn btn-primary" style="position:relative; top:4px; margin-left:10px;">Kaydet</a>
+
+        <div id="result" style="display: none;">Ayarlar kaydedildi</div>
+    </div>
+    <div class="well settings" style="clear:left;">
+        <h3>Nasıl Kullanılır?</h3>
+        <ul>
+            <li>Çevirisini öğrenmek istediğiniz kelimeye çift tıkladığınızda
+                açılan küçük pencerede çevirileri görebilirsiniz.
+            </li>
+            <li>Ayrıca sağ üst köşedeki uygulama ikonuna tıklayarak daha önceki aramalarınızı görebilirsiniz.</li>
+            <li>Eğer isterseniz uzantılar sayfasından kısayol tanımlayabilirsiniz (
+                <a href="chrome://extensions/" class="open-link-via-chrome-api on-new-tab"
+                   data-galinkid="extensions howtouse">chrome://extensions/</a>)
+            </li>
+        </ul>
+    </div>
+
+    <hr>
+    <footer>
+        <p>
+            &copy;<span id="copyright-year-footer">2015</span>
+            Doruk kangal - Bu uygulama gönüllü olarak geliştirilmektedir
+        </p>
+    </footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,60 @@
+{
+  "author": "Doruk Kangal",
+  "short_name": "Sözlük++",
+  "name": "Sözlük++",
+  "description": "Sözlük++",
+  "icons": {
+    "48": "images/icon_48.png",
+    "128": "images/icon_128.png"
+  },
+  "background": {
+    "scripts": [
+      "common.js",
+      "background.js"
+    ]
+  },
+  "browser_action": {
+    "default_icon": "images/AppIcon.png",
+    "default_popup": "popup.html",
+    "default_title": "Sözlük++"
+  },
+  "options_page": "options.html",
+  "permissions": [
+    "tabs",
+    "http://dictionary-plus-plus.elasticbeanstalk.com",
+    "storage"
+  ],
+  "web_accessible_resources": [
+    "lib/jquery-2.0.3.min.map"
+  ],
+  "content_scripts": [
+    {
+      "js": [
+        "lib/jquery-2.0.3.min.js",
+        "content_script.js"
+      ],
+      "css": [
+        "css/custom.css"
+      ],
+      "matches": [
+        "http://*/*",
+        "https://*/*"
+      ]
+    }
+  ],
+  "commands": {
+    "_execute_browser_action": {
+      "suggested_key": {
+        "chromeos": "Alt+V",
+        "default": "Alt+V",
+        "linux": "Alt+V",
+        "mac": "Alt+V",
+        "windows": "Alt+V"
+      }
+    }
+  },
+  "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDrDkvRdJgmNdq/JoWJO5PRVDNHNZt5FduGlemyWEN8CseTUEgaiX7SKi/9Aed+RKUksAjWSQPu+E6iJXsoFs01p+hY0KvMwORYU05OW+BPYOM2hTaNXd9TlJhxEd/f3ddb6WHCi4pVolRPQWw4AvbbsfciEDBg1FSoMgSt1J8kCQIDAQAB",
+  "manifest_version": 2,
+  "version": "1.0.0",
+  "update_url": "https://clients2.google.com/service/update2/crx"
+}
